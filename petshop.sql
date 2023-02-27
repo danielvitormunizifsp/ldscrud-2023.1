@@ -27,12 +27,12 @@ SET time_zone = "+00:00";
 -- Estrutura para tabela `cliente`
 --
 
-CREATE TABLE `tarefa` (
-  `id` int(11) NOT NULL,
-  `resumo da tarefa` varchar(50) NOT NULL,
-  `descricao` varchar(50) NOT NULL,
-  `responsavel` varchar(50) NOT NULL,
-  `data da tarefa` varchar(50) NOT NULL,
+CREATE TABLE tarefa (
+  id int(4) NOT NULL,
+  Descricaotarefa varchar(50) NOT NULL,
+  data_alteracao varchar(50) NOT NULL,
+  data_criacao  varchar(50) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  statustarefa BIT NOT NULL, 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
